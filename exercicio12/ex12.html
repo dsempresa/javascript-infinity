@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 12</title>
+    <style>
+        body {
+            background-color: rgb(113, 113, 231);
+            font: 12pt arial;
+            color: white;
+        }
+
+        input {
+            width: 150px;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: rgb(119, 119, 119);
+            color: white;
+        }
+
+        input:hover {
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Jornada do Trabalhador</h1>
+    <p>Quantas horas você trabalhou esse mês: <input type="number" name="horas" id="htrab"></p>
+    <p>Quanto você recebe por hora trabalhada: <input type="number" name="valor" id="vph" step="0.01"></p>
+    <input type="button" value="calcular" onclick="calcular()">
+    <p>
+        <div id="salario"></div>
+    </p>
+    <script>
+        function calcular() {
+            var horas = document.getElementById('htrab')
+            var valor = document.getElementById('vph')
+            var res = Number(horas.value)
+            var val = Number(valor.value) 
+            var bruto = res * val
+            var ir = (bruto / 100) * 11
+            var inss = (bruto / 100) * 8
+            var sindicato = (bruto / 100) * 5
+            var liquido = bruto - ir - inss - sindicato
+            var salario = document.getElementById('salario')
+
+            salario.innerHTML = `Seu salário bruto  é R$ ${bruto} e com descontos de IR(11%) R$${ir},00 , INSS(8%) R$${inss},00 , Sindicato(5%) R$${sindicato},00 ,você receberá um valor líquido de ${liquido}.`
+
+        }
+    </script>
+    
+</body>
+</html>
