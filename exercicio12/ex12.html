@@ -9,7 +9,7 @@
         body {
             background-color: rgb(113, 113, 231);
             font: 12pt arial;
-            color: white;
+            color: rgb(0, 0, 0);
         }
 
         input {
@@ -17,23 +17,35 @@
             padding: 5px;
             border-radius: 5px;
             background-color: rgb(119, 119, 119);
-            color: white;
+            color: rgb(255, 255, 255);
         }
 
         input:hover {
             background-color: black;
         }
 
+        section {
+            background-color: white;
+            padding: 10px;
+            width: 400px;
+            margin: auto;
+            border: solid black;
+            border-radius: 5px;
+            color: black;
+        }
+
     </style>
 </head>
 <body>
     <h1>Jornada do Trabalhador</h1>
+<section>
     <p>Quantas horas você trabalhou esse mês: <input type="number" name="horas" id="htrab"></p>
     <p>Quanto você recebe por hora trabalhada: <input type="number" name="valor" id="vph" step="0.01"></p>
     <input type="button" value="calcular" onclick="calcular()">
     <p>
         <div id="salario"></div>
     </p>
+</section>
     <script>
         function calcular() {
             var horas = document.getElementById('htrab')
