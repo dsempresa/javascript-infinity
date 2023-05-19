@@ -12,10 +12,14 @@
             color: rgb(0, 0, 0);
         }
 
+        h1 {
+            text-align: center;
+        }
+
         input {
             width: 150px;
             padding: 5px;
-            border-radius: 5px;
+            border-radius: 25px;
             background-color: rgb(119, 119, 119);
             color: rgb(255, 255, 255);
         }
@@ -27,12 +31,13 @@
         section {
             background-color: white;
             padding: 10px;
-            width: 400px;
+            width: 500px;
             margin: auto;
             border: solid black;
-            border-radius: 5px;
+            border-radius: 25px;
             color: black;
         }
+
 
     </style>
 </head>
@@ -59,8 +64,7 @@
             var liquido = bruto - ir - inss - sindicato
             var salario = document.getElementById('salario')
 
-            salario.innerHTML = `Seu salário bruto  é R$ ${bruto} e com descontos de IR(11%) R$${ir},00 , INSS(8%) R$${inss},00 , Sindicato(5%) R$${sindicato},00 ,você receberá um valor líquido de ${liquido}.`
-
+            salario.innerHTML = `Seu salário bruto  é <strong>R$${bruto},00</strong> e com descontos de <strong>IR(11%) R$${ir},00</strong> , <strong>INSS(8%) R$${inss},00</strong> , <strong>Sindicato(5%) R$${sindicato},00</strong> ,você receberá um valor líquido de <strong>${liquido}</strong>.`
         }
     </script>
     
