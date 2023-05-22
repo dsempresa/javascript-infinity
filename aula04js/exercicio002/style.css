@@ -1,0 +1,47 @@
+body {
+    background-color: lightgray;
+    font: 14pt Arial;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    background-color: blue;
+    color: white;
+    margin: auto;
+    width: 500px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px rgba(42, 42, 42, 0.416);
+}
+
+input {
+    background-color: yellow;
+    width: 50px;
+    height: 23px;
+    border-radius: 5px;
+}
+
+input#gerando {
+    background-color: lightgreen;
+    width: 110px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+strong {
+    color: yellow;
+}
+
+footer {
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    font-style: italic;
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
