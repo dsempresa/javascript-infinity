@@ -6,7 +6,7 @@ function gerar() {
     }else {
         res.innerHTML = 'Contando...<br>'
         let i = Number(numero.value)
-        let f = 51
+        let f = 50
         let p = 2
         for(let c = i; c <= f; c = c + p) {
             res.innerHTML += ` ${c} \u{1F449}`
