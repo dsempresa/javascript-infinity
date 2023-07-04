@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>
+        Exercício 01
+    </h1>
+    <p>
+        Faça um programa que permita entrar com o nome, a nota da prova 1 e a nota da prova 2 de um aluno. O programa deve imprimir o nome, a nota da prova 1, a nota da prova 2, a média das notas e uma das mensagens: "Aprovado", "Reprovado"ou "em Prova Final"(a média é 7 para aprovação, menor que 3 para reprovação e as demais em prova final). 
+    </p>
+
+    <header>
+        <h2>
+            Resultado de Provas
+        </h2>
+    </header>
+
+    <section>
+        <label for="inome">Nome do aluno:</label>
+        <input type="text" id="nome"><br>
+        <label for="inota1">1ª Nota:</label>
+        <input type="number" name="nota" id="nota1"><br>
+        <label for="inota2">2ª Nota:</label>
+        <input type="number" name="nota" id="nota2"><br>
+        <input type="button" value="Verificar" id="botao" onclick="analisar()">
+        <div id="res">
+            Calculando resultado...
+        </div>
+    </section>
+
+
+    <script src="ex001.js"></script>
+</body>
+</html>
