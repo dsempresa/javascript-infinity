@@ -1,0 +1,51 @@
+body {
+    background: aqua;
+    font: normal 16pt Arial;
+}
+
+h2 {
+    text-align: center;
+    border: dashed black 2px;
+    margin: auto;
+    width: 500px;
+    height: 35px;
+}
+
+p {
+    background-color: aliceblue;
+    border: solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+section {
+    background-color: rgb(13, 86, 232);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: auto;
+    padding: 15px;
+    width: 500px;
+    height: 150px;
+}
+
+label {
+    text-align: center;
+}
+
+input {
+    width: 100px;
+    text-align: center;
+}
+
+input#botao:hover {
+    background-color: chartreuse;
+}
+div {
+    color: white;
+    padding: 15px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
