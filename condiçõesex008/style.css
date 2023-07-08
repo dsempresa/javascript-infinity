@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(172, 172, 219);
+    font: normal 15pt Arial;
+}
+
+h2 {
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin: auto;
+    width: 400px;
+    text-align: center;
+}
