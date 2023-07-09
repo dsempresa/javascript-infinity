@@ -10,3 +10,57 @@ h2 {
     width: 400px;
     text-align: center;
 }
+p {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+    text-align: justify;
+}
+
+div#formulario {
+    border-radius: 5px;
+    background-color: white;
+    margin: auto;
+    padding: 5px;
+    width: 700px;
+    height: 200px;
+    columns: 2;
+}
+
+form {
+    width: 700px;
+    margin: auto;
+    padding: 5px;
+}
+
+input#inome {
+    width: 500px;
+}
+
+input#iidade{
+    width: 50px;
+}
+
+div#res {
+    border-radius: 5px;
+    background-color: white;
+    margin: auto;
+    padding: 5px;
+    width: 700px;
+    height: 200px;
+} 
+
+input#botao {
+    width: 700px;
+    border-radius: 5px;
+}
+
+input#botao:hover {
+    background-color: aqua;
+}
+
+footer {
+    text-align: center;
+    margin-top: 10px;
+    font-style: oblique;
+}
