@@ -17,6 +17,6 @@ function calcular() {
     } if(idade > 59 && idade <= 65) {
         resultado.innerHTML = `${nome}, seu plano nessa idade de ${idade} anos ficará o valor de R$250,00.`
     } else{
-        resultado.innerHTML = `${nome}, seu plano nessa idade de ${idade}`
+        resultado.innerHTML = `${nome}, seu plano nessa idade de ${idade} anos ficará o valor de R$400,00.`
     }
 }
