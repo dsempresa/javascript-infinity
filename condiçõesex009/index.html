@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 009</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h2>
@@ -18,15 +19,26 @@
             <li>De 0 500</li>
             <li>De 501 a 1000</li>
             <li>De 1001 a 3000</li>
-            <li>De 3001 aem diante</li>
-        </ul>
-        <ul>
+            <li>De 3001 em diante</li><br>
             Percentual
             <li>Nenhum crédito</li>
             <li>30% do valor do médio</li>
             <li>40% do valor do médio</li>
             <li>50% do valor do médio</li>
-        </ul>
+        </ul>    
     </section>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="inome">
+        <label for="salario">Salário:</label>
+        <input type="number" name="sal" id="salariomes">
+        <input type="button" id="botao" value="Calcular" onclick="calculo()">
+    </form>
+        
+    <div id="res">
+
+    </div>
+
+    <script src="ex009.js"></script>
 </body>
 </html>
