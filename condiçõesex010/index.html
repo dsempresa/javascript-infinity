@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>
+        Exercício 10
+    </h1>
+    <p>
+        Em um campeonato nacional de arco-e-flecha, tem-se equipes de três jogadores para cada estado. Sabendo-se que os arqueiros de uma equipe não obtiveram o mesmo número de pontos, criar um programa em JS que informe se uma equipe foi classificada, de acordo com a seguinte especificação: 
+    <div id="requisitos">
+        <li>Ler os pontos obtidos por cada jogador da equipe;</li>
+        <li>Mostrar esses valores em ordem decrescente;</li>
+        <li>Se a soma dos pontos for maior do que 100, imprimir a média aritmética entre eles, caso contrário, imprimir a mensagem "Equipe desclassificada".</li>
+    </div> 
+    </p>
+    <section>
+        <form id="um">
+            <h4>Equipe 1</h4>
+            <label for="jog1">Jogador 1:</label>
+            <input type="text" id="jogador">
+            <label for="not">Nota:</label>
+            <input type="number" name="notas" class="notajog1e1" step="0.1"><br>
+            <label for="jog2">Jogador 2:</label>
+            <input type="text" id="jogador">
+            <label for="not">Nota:</label>
+            <input type="number" name="notas" class="notajog2e1" step="0.1"><br>
+            <label for="jog3">Jogador 3:</label>
+            <input type="text" id="jogador">
+            <label for="not">Nota:</label>
+            <input type="number" name="notas" class="notajog3e1" step="0.1"><br>
+            <input type="button" value="calcular" onclick="calculare1()">
+            <div id="mediae1"></div><br>
+        </form>
+        <form id="dois">
+            <h4>Equipe 2</h4>
+            <label for="jog1">Jogador 1:</label>
+            <input type="text" id="jogador">
+            <label for="not">Nota:</label>
+            <input type="number" name="notas" class="notajog1e2" step="0.1"><br>
+            <label for="jog2">Jogador 2:</label>
+            <input type="text" id="jogador">
+            <label for="not">Nota:</label>
+            <input type="number" name="notas" class="notajog2e2" step="0.1"><br>
+            <label for="jog3">Jogador 3:</label>
+            <input type="text" id="jogador">
+            <label for="not">Nota:</label>
+            <input type="number" name="notas" class="notajog3e2" step="0.1"><br>
+            <input type="button" value="calcular" onclick="calculare2()">
+            <div id="mediae2"></div> <br>
+        </form>
+        <form id="tres">
+            <h4>Equipe 3</h4>
+            <label for="jog1">Jogador 1:</label>
+            <input type="text" id="jogador">
+            <label for="not">Nota:</label>
+            <input type="number" name="notas" class="notajog1e3" step="0.1"><br>
+            <label for="jog2">Jogador 2:</label>
+            <input type="text" id="jogador">
+            <label for="not">Nota:</label>
+            <input type="number" name="notas" class="notajog2e3" step="0.1"><br>
+            <label for="jog3">Jogador 3:</label>
+            <input type="text" id="jogador">
+            <label for="not">Nota:</label>
+            <input type="number" name="notas" class="notajog3e3" step="0.1"><br>
+            <input type="button" value="calcular" onclick="calculare3()">
+            <div id="mediae3"></div> <br>
+        </form>
+    </section>
+    
+   
+
+
+    <script src="ex010.js"></script>
+</body>
+</html>
