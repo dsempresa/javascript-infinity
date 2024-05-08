@@ -19,7 +19,3 @@
 // Exiba os resultados de forma clara e organizada.
 
 
-let totalEstudantes = parseInt(prompt("Digite o número total de estudantes na turma:"));
-
-// Exibir o número total de estudantes fornecido pelo professor
-console.log("O número total de estudantes na turma é: " + totalEstudantes);
