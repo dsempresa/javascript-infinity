@@ -19,3 +19,36 @@
 // Exiba os resultados de forma clara e organizada.
 
 
+function coletarNotas() {
+    const numEstudantes = parseInt(document.getElementById('numEstudantes').value);
+    if (isNaN(numEstudantes) || numEstudantes <= 0) {
+      alert('Por favor, insira um número válido de estudantes.');
+      return;
+    }
+  
+    let notas = [];
+    for (let i = 1; i <= numEstudantes; i++) {
+      const nota = prompt(`Insira a nota do estudante ${i}:`);
+      if (nota === null || nota.trim() === '') {
+        alert('Por favor, insira uma nota válida.');
+        return;
+      }
+      notas.push(parseFloat(nota));
+    }
+  
+    const media = calcularMedia(notas);
+    const maiorNota = Math.max(...notas);
+    const menorNota = Math.min(...notas);
+  
+    document.getElementById('notasInput').style.display = 'none';
+    document.getElementById('resultado').style.display = 'block';
+    document.getElementById('media').innerText = media.toFixed(2);
+    document.getElementById('maiorNota').innerText = maiorNota.toFixed(2);
+    document.getElementById('menorNota').innerText = menorNota.toFixed(2);
+  }
+  
+  function calcularMedia(notas) {
+    const soma = notas.reduce((total, nota) => total + nota, 0);
+    return soma / notas.length;
+  }
+  

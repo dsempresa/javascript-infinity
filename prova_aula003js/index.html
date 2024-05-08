@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculando Notas da Turma</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Calculando Notas da Turma</h1>
+  <label for="numEstudantes">Número de Estudantes na Turma:</label>
+  <input type="number" id="numEstudantes">
+  <button onclick="coletarNotas()">Inserir Notas</button>
+  <div id="notasInput" style="display: none;"></div>
+  <div id="resultado" style="display: none;">
+    <h2>Resultados:</h2>
+    <p>Média da Turma: <span id="media"></span></p>
+    <p>Maior Nota: <span id="maiorNota"></span></p>
+    <p>Menor Nota: <span id="menorNota"></span></p>
+  </div>
+</div>
+
+<script src="prova003.js"></script>
+</body>
+</html>
